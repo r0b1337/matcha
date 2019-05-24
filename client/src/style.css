@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+html, body, .root {
+    font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+}
+
+.toast-container {
+	text-align: center;
+}
+
+.flex-div {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+	align-items: baseline;
+	align-content: center;
+}
+
+.home-background {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	min-height: 350px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bg-1 { background-image: url('http://localhost:3000/images/home-background-1.jpg') }
+.bg-2 { background-image: url('http://localhost:3000/images/home-background-2.jpg') }
+.bg-3 { background-image: url('http://localhost:3000/images/home-background-3.jpg') }
+
+.card-sugg-img {
+	width: 200px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.card-sugg-img:hover {
+	opacity	: 0.7;
+	cursor: pointer;
+}
+
+.profile-buttons {
+	text-align: center;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 40em;
+}
+
+.profile-picture {
+	width: 325px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.profile-details {
+	width: 325px;
+}
+
+.profile-left {
+	margin-right: 50px;
+}
+
+.profile-right {
+	margin-left: 50px;
+}
+
+.profile-separator {
+	border-left: 2px solid lightgray;
+	border-right: 2px solid lightgray;
+	height: 400px;
+}
+
+@media (max-width:752px) {
+
+  .profile-separator { display: none; }
+  .profile-left { margin: auto}
+  .profile-right { margin: auto}
+
+}
+
+.profile-name {
+	font-size: x-large;
+}
+
+.profile-main {
+	font-size: large;
+}
+
+.profile-agd {
+	color: dimgrey;
+}
+
+.affinities-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
+
+.affinities-body {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5vh;
+}
+
+.affinities-left {
+	margin-right: 50px;
+	width: 25vw;
+	text-align: right;
+}
+
+.affinities-right {
+	margin-left: 50px;
+	width: 25vw;
+	text-align: left;
+}
+
+.affinities-cell:hover {
+	background-color: Gainsboro;
+	cursor: pointer;
+}
+
+.clickable:hover {
+	cursor: pointer;
+	color: #48048c;
+}
+
+.notification-new {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.responsive-div{
+	width: 70vmin;
+	margin: auto;
+}
+
+.long-div{
+	height: 50vmax;
+}
